@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>💰 AI Mentor</h2>
+    <div>
+        <a href="index.html">Dashboard</a>
+        <button onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="chat-wrapper">
+
+    <div class="chat-card">
+
+        <div class="chat-header">
+            🤖 AI Money Mentor
+        </div>
+
+        <div id="chatBox"></div>
+
+        <div class="chat-input">
+            <input id="userInput" placeholder="Ask about money...">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="startVoice()">🎤</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

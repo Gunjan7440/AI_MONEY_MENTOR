@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI Money Mentor</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>💰 AI Mentor</h2>
+    <div>
+        <a href="chatbot.html">💬 AI Chat</a>
+        <button onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="container">
+
+<!-- HERO -->
+<div class="hero-card">
+    <h2>Your Net Worth</h2>
+    <h1 id="networth">₹0</h1>
+    <p id="growth">+₹0 this month 🚀</p>
+</div>
+
+<!-- INPUT -->
+<div class="input-section">
+
+    <div class="card input-card">
+        <h3>💸 Income</h3>
+        <input type="number" id="income" placeholder="Enter monthly income">
+    </div>
+
+    <div class="card input-card">
+        <h3>💳 Expenses</h3>
+        <input type="number" id="expense" placeholder="Enter monthly expenses">
+    </div>
+
+    <div class="card input-card">
+        <h3>💰 Savings</h3>
+        <input type="number" id="savings" placeholder="Enter current savings">
+    </div>
+
+</div>
+
+<!-- BUTTON -->
+<div class="analyze-box">
+    <button type="button" onclick="analyze()" class="analyze-btn">
+        Analyze Financial Health
+    </button>
+</div>
+
+<!-- RESULT -->
+<div class="card result-card">
+    <h3>📊 Insights</h3>
+    <div id="result"></div>
+</div>
+
+<!-- CHART -->
+<div class="card">
+    <h3>📊 Financial Overview</h3>
+    <canvas id="financeChart"></canvas>
+</div>
+
+<!-- STATS -->
+<div class="stats-section">
+
+    <div class="card stat-card">
+        <h3>📊 Health Score</h3>
+        <div id="score">0</div>
+    </div>
+
+    <div class="card stat-card">
+        <h3>🔥 FIRE Goal</h3>
+        <div id="fire">₹0</div>
+    </div>
+
+</div>
+
+<!-- HISTORY -->
+<div class="card history-card">
+    <h3>📜 History</h3>
+    <ul id="history"></ul>
+    <button onclick="clearHistory()">Clear</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
